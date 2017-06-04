@@ -19,10 +19,10 @@ FASTLED_USING_NAMESPACE
 //#define CLK_PIN   4
 #define LED_TYPE    WS2811
 #define COLOR_ORDER GRB
-#define NUM_LEDS    29
+#define NUM_LEDS    23
 CRGB leds[NUM_LEDS];
 
-#define BRIGHTNESS          96
+#define BRIGHTNESS          20
 #define FRAMES_PER_SECOND  120
 
 void setup() {
@@ -79,7 +79,7 @@ void rainbow()
 {
   // FastLED's built-in rainbow generator
   fill_rainbow( leds, NUM_LEDS, gHue, 7);
-  fill_rainbow( topOutside, NUM_LEDS, gHue, 7);
+//  fill_rainbow( topOutside, NUM_LEDS, gHue, 7);
 }
 
 void confetti() 
